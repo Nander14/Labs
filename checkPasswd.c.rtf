@@ -1,0 +1,52 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2577
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red99\green226\blue255;\red251\green30\blue255;\red0\green0\blue0;
+\red128\green255\blue167;\red50\green244\blue241;\red254\green215\blue216;\red235\green239\blue24;\red224\green228\blue9;
+}
+{\*\expandedcolortbl;;\cssrgb\c44518\c90662\c100000;\cssrgb\c100000\c29678\c100000;\csgray\c0;
+\cssrgb\c55755\c100000\c71263;\cssrgb\c19571\c95778\c95688;\cssrgb\c100000\c87709\c87701;\cssrgb\c93803\c93590\c10850;\cssrgb\c90000\c90000\c0;
+}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 #include\cf3 <conio.h>\cf4 \
+\cf2 #include\cf3 <stdio.h>\cf4 \
+\cf5 int\cf4  p; \cf6 /* p will hold lenght of input */\cf4 \
+\cf5 char\cf4  pswd[\cf3 100\cf4 ];\cf6 /*password that will be entered*/\cf4 \
+\cf5 char\cf4  c; \cf6 /* taking input from user one by on character*/\cf4 \
+\cf5 int\cf4  l=-\cf3 1\cf4 ; \cf6 /* index variable */\cf4 \
+\cf5 int\cf4  score=\cf3 0\cf4 ;\cf6 /* counter variable used for count of pswd length*/\cf4 \
+\cf5 void\cf4  main()\
+\{\
+clrscr();\
+printf(\cf3 "input the password plz do not give spaces between \cf7 \\n\cf3 "\cf4 );\
+\cf8 do\cf4 \{\
+c= getchar() ; \cf6 /* taking input from user using getchar()\cf4 \cb9 ,\cf6 \cb1 it will read one by one character*/\cf4 \
+pswd[l]=c;\cf6 /* writing c at index l of pswd*/\cf4 \
+l++;\
+\}\cf8 while\cf4 (c!=\cf7 '\\n'\cf4 );\
+p=strlen(pswd);\
+\cf8 if\cf4 (p<\cf3 10\cf4 )\
+\{\
+\cf5 int\cf4  r=\cf3 10\cf4 -p;\cf6 /* finding how much less than 10 the pswd is*/\cf4 \
+score=-\cf3 1\cf4 *(r*\cf3 5\cf4 );\cf6 /*deducing 5 points per missing character*/\cf4 \
+printf(\cf3 " score = \cf7 %d\cf3  \cf7 \\n\cf3 "\cf4 \cb9 ,\cb1 score);\
+\cf8 if\cf4 ((-\cf3 1\cf4 *(score))>=\cf3 30\cf4 )\cf6 /* since we have to consider magnitude of deduction so considered -score*/\cf4 \
+printf(\cf3 "password is unsafe! plz reset"\cf4 );\
+\cf8 else\cf4 \
+printf(\cf3 "safe password"\cf4 );\
+\}\
+\cf8 if\cf4 (p>\cf3 10\cf4 )\
+\{\
+\cf5 int\cf4  r=p-\cf3 10\cf4 ;\cf6 /* finding how much greater than 10 the pswd is*/\cf4 \
+score=r*\cf3 5\cf4 ;\
+printf(\cf3 " score = \cf7 %d\cf3  \cf7 \\n\cf3 "\cf4 \cb9 ,\cb1 score);\
+\cf8 if\cf4 (score>\cf3 30\cf4 )\
+printf(\cf3 "password is unsafe! plz reset"\cf4 );\
+\cf8 else\cf4 \
+printf(\cf3 "safe password"\cf4 );\
+\}\
+\cf8 if\cf4 (p==\cf3 10\cf4 )\
+printf(\cf3 "safe password"\cf4 );\
+getch();\
+\}}

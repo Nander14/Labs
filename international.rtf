@@ -1,0 +1,53 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2577
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red50\green244\blue241;\red254\green215\blue216;
+\red235\green239\blue24;\red99\green226\blue255;\red224\green228\blue9;\red251\green30\blue255;\red223\green223\blue223;
+\red220\green0\blue5;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c19571\c95778\c95688;\cssrgb\c100000\c87709\c87701;
+\cssrgb\c93803\c93590\c10850;\cssrgb\c44518\c90662\c100000;\cssrgb\c90000\c90000\c0;\cssrgb\c100000\c29678\c100000;\cspthree\c90006\c89994\c90010;
+\cssrgb\c90000\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 \'a0\'a0\'a0\cf3 #include <stdio.h>\cf2 \
+struct dialing_code \cf4 \{\cf2 \
+\'a0\'a0\'a0 char *country\cf5 ;\cf2 \
+\'a0\'a0\'a0 int code\cf5 ;\cf2 \
+\cf4 \}\cf2 ;\
+int\
+main \cf6 (\cf4 int argc\cf2 \cb7 ,\cf4 \cb1  char* argv[]\cf6 )\cf2  \cf4 \{\cf2 \
+\'a0\'a0\'a0 int intl_code\cb7 ,\cb1  i\cf5 ;\cf2 \
+\'a0\'a0\'a0 const struct dialing_code country_codes\cf5 []\cf2  \cf5 =\cf2  \cf4 \{\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 \{\cf5 "\cf8 Argentina\cf5 "\cf2 \cb7 ,\cb1  \cf8 54\cf4 \}\cf2 \cb7 ,\cb1  \cf4 \{\cf5 "\cf8 Bangladesh\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf8 880\cf4 \}\cf2 \cb7 ,\cb1 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 \{\cf5 "\cf8 Brazil\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0 \cf8 55\cf4 \}\cf2 \cb7 ,\cb1  \cf4 \{\cf5 "\cf8 Burma (Myanmar)\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0 \cf8 95\cf4 \}\cf2 \cb7 ,\cb1 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 \{\cf5 "\cf8 China\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0\'a0 \cf8 86\cf4 \}\cf2 \cb7 ,\cb1  \cf4 \{\cf5 "\cf8 Colombia\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf8 57\cf4 \}\cf2 \cb7 ,\cb1 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 \{\cf5 "\cf8 Congo\cf2 \cb7 ,\cf8 \cb1 Dem.\cf5 "\cf2 \cb7 ,\cf8 \cb1 243\cf4 \}\cf2 \cb7 ,\cb1  \cf4 \{\cf5 "\cf8 Egypt\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf8 20\cf4 \}\cf2 \cb7 ,\cb1 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 \{\cf5 "\cf8 Ethiopia\cf5 "\cf2 \cb7 ,\cb1  \cf8 251\cf4 \}\cf2 \cb7 ,\cb1  \cf4 \{\cf5 "\cf8 France\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf8 33\cf4 \}\cf2 \cb7 ,\cb1 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 \{\cf5 "\cf8 Germany\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0 \cf8 49\cf4 \}\cf2 \cb7 ,\cb1  \cf4 \{\cf5 "\cf8 India\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf8 91\cf4 \}\cf2 \cb7 ,\cb1 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 \{\cf5 "\cf8 Indonesia\cf5 "\cf2 \cb7 ,\cb1  \cf8 62\cf4 \}\cf2 \cb7 ,\cb1  \cf4 \{\cf5 "\cf8 Iran\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf8 98\cf4 \}\cf2 \cb7 ,\cb1 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 \{\cf5 "\cf8 Italy\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0\'a0 \cf8 39\cf4 \}\cf2 \cb7 ,\cb1  \cf4 \{\cf5 "\cf8 Japan\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf8 81\cf4 \}\cf2 \cb7 ,\cb1 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 \{\cf5 "\cf8 Mexico\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0 \cf8 52\cf4 \}\cf2 \cb7 ,\cb1  \cf4 \{\cf5 "\cf8 Nigeria\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf8 234\cf4 \}\cf2 \cb7 ,\cb1 \
+\'a0 \cf4 \{\cf5 "\cf8 Pakistan\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0 \cf8 92\cf4 \}\cf2 \cb7 ,\cb1  \cf4 \{\cf5 "\cf8 Philippines\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf8 63\cf4 \}\cf2 \cb7 ,\cb1 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 \{\cf5 "\cf8 Poland\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0 \cf8 48\cf4 \}\cf2 \cb7 ,\cb1  \cf4 \{\cf5 "\cf8 Russia\cf5 "\cf2 \cb7 ,\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf8 7\cf4 \}\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 \}\cf5 ;\cf2 \
+\'a0\'a0\'a0 int n_entries \cf5 =\cf2  sizeof\cf6 (\cf2 country_codes\cf6 )\cf2  / sizeof\cf6 (\cf2 *country_codes\cf6 )\cf5 ;\cf2 \
+\
+\'a0\'a0\'a0 \cf5 do\cf2  \cf4 \{\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 int found \cf5 =\cf2  \cf8 0\cf5 ;\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf5 printf\cf6 (\cf5 "\cf8 Please input the international code(-1 to exit): \cf5 "\cf6 )\cf5 ;\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 scanf\cf6 (\cf5 "\cf8 %d\cf5 "\cf2 \cb7 ,\cb1  &intl_code\cf6 )\cf5 ;\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf5 if \cf6 (\cf2 intl_code == \cf8 -1\cf6 )\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf5 break\cf2 ;\
+\'a0\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf5 for\cf2  \cf6 (\cf2 i = \cf8 0\cf2 ; i < n_entries; i++\cf6 )\cf2  \cf4 \{\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf5 if \cf6 (\cf2 country_codes[i].code == intl_code\cf6 )\cf2  \cf4 \{\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf5 printf\cf6 (\cf5 "\cf8 The country is: %s\cf4 \\n\cf5 "\cf2 \cb7 ,\cb1  country_codes[i].country\cf6 )\cf5 ;\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 found \cf5 =\cf2  \cf8 1\cf5 ;\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf4 \}\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf9 \cb10 \}\cf2 \cb1 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf5 if \cf6 (\cf2 !found\cf6 )\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf5 printf\cf6 (\cf5 "\cf8 Code not found.\cf4 \\n\cf5 "\cf6 )\cf2 ;\
+\'a0\'a0\'a0 \cf9 \cb10 \}\cf2 \cb1  while\cf6 (\cf8 1\cf6 )\cf2 ;\
+\'a0\'a0\'a0 \cf5 return\cf2  \cf8 0\cf2 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf9 \cb10 \}}
